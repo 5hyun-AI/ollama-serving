@@ -38,3 +38,35 @@ $ .\venv\Scripts\activate # windows
 ```shell
 (.venv) $ pip install -r requirements.txt
 ```
+
+### 5. Set Ollama Server
+
+- 백그라운드에서 Ollama 서버 실행
+
+```shell
+(.venv) $ ollama serve &
+# Ctrl + c로 빠져나오기
+```
+
+- 모델 다운로드(약 4.5GB)
+
+```shell
+(.venv) & ollama run llama3:7b
+```
+
+### 6. execute FastAPI server
+
+```shell
+(.venv) $ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 7. request POST in Postman
+
+![image](src/image.png)
+
+### 8. Ollama 및 FastAPI 서버 종료
+
+```shell
+# FastAPI인 경우에는 Ctrl + c
+(.venv) lsof -t -i:11434 | xargs kill -9
+```
