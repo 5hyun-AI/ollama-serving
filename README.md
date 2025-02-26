@@ -51,7 +51,7 @@ $ .\venv\Scripts\activate # windows
 - 모델 다운로드(약 4.5GB)
 
 ```shell
-(.venv) & ollama run llama3:8b
+(.venv) $ ollama run llama3:8b
 ```
 
 ### 6. execute FastAPI server
@@ -68,5 +68,5 @@ $ .\venv\Scripts\activate # windows
 
 ```shell
 # FastAPI인 경우에는 Ctrl + c
-(.venv) lsof -t -i:11434 | xargs kill -9
+(.venv) $ lsof -t -i:11434 | xargs kill -9
 ```
