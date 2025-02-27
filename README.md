@@ -48,10 +48,10 @@ $ .\venv\Scripts\activate # windows
 # Ctrl + c로 빠져나오기
 ```
 
-- 모델 다운로드(약 4.5GB)
+- 모델 다운로드(약 1.5GB)
 
 ```shell
-(.venv) $ ollama run llama3:8b
+(.venv) $ ollama run llama3.2:1b
 ```
 
 ### 6. execute FastAPI server
