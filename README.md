@@ -20,7 +20,7 @@
 ### 2. Git Clone
 
 ```shell
-$ git clone git@github.com:5hyun-AI/ollama-serving.git
+$ git clone https://github.com/5hyun-AI/ollama-serving.git
 $ cd ollama-serving
 ```
 
